@@ -1,12 +1,234 @@
-#first{    
-
-    background-color: aqua;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.bg-blue {
-    background-color: blue;
-    color: white;
-}       
-.red{
-    background-color: rgb(211, 23, 23);
-    width: 100%;
+header{
+  margin-top: 22px;
+  position: fixed;
+  width: 100%;
+  top: -22px;
+  
+}
+.nav-bar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  line-height: 5rem;
+  
+}
+
+.nav-bar h1 {
+  color: black;
+  padding-left: 50px;
+}
+
+.nav-bar ul {
+  margin: auto 0;
+  margin-right: 4rem;
+  display: flex;
+  
+}
+
+.nav-bar ul li {
+  list-style: none;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-bar ul li .hm{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.buttonlink {
+  position: absolute;
+  display: none;
+  top: 2.5rem;
+  right: 4rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+
+}
+
+.buttonlink .bar {
+  background-color: black;
+  height: 4px;
+  width: 100%;
+  border-radius: 5px;
+}
+main {
+  text-align: center;
+}
+.startinginfo{
+padding: 0 10vw;
+margin: 200px 20px 60px 20px;
+}
+main h1{
+  font-size: 80px;
+  margin-bottom: 30px;
+
+}
+.startinginfo a{
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif
+}
+.startinginfo a:hover{
+  opacity: 0.8;
+}
+.foodimg{
+  width: 100%;
+  padding: 0 5%;
+  margin-bottom: 60px; 
+}
+.foodimg img {
+  border-radius: 10px;
+  width: 90%;
+  
+}
+.ourstory{
+  /* background-color: rgb(168, 221, 249); */
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  flex-wrap: wrap-reverse;
+}
+/* .box1{
+
+  border: 2px black solid;
+} */
+.box2{
+  width: 550px;
+  height: 450px;
+  margin: 20px 0 0 0;
+  text-align: left;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+.box2 h2{
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+.box2 p{
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box2 a{
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  width: 120px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box2 a:hover{
+  opacity: 0.8;
+}
+.box1 img{
+  width: 550px;
+  
+  align-items: center;
+  display: flex;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.offerevent{
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: auto auto;
+  row-gap: 10%;
+  
+}
+.offereventh2{
+  font-size: 60px;
+  margin: 8vw 10px;
+}
+
+.offerevent .box{
+  /* border: 2px black solid; */
+  line-height: 50px;
+  min-width: 420px;
+}
+.offerevent .box h3{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.offerevent p{
+  line-height: 1.5;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.offereventimg{
+  width: 90%;
+  margin: 140px 0;
+  border-radius: 10px;
+}
+.gitouch{
+  background-color: skyblue;  
+  /* line-height: 50px; */
+  padding: 50px 20% 50px 20%;
+  
+}
+.gitouch h3{
+  margin-bottom: 40px;
+  font-size: 4vw;
+}
+.gitouch a{
+  padding: 15px 35px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.gitouch a:hover{
+  opacity: 0.8;
+}
+.fcontainer{
+ display: flex;
+ justify-content: space-between;
+margin: 80px 10vw;
+ 
+}
+footer .fbox1{
+  max-width: 400px;
+  min-width: 200px;
+  text-align: left;
+}
+.fbox2{
+  text-align: left;
+}
+
+footer .fcontainer .fbox1 h3, .fbox2 h3{
+  font-size: 35px;
+  line-height: 80px;
+}
+.fbox1 p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
+.fbox2 a{
+  color: black;
+  text-decoration: none;
+  font-family:Arial, Helvetica, sans-serif;
 }

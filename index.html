@@ -5,45 +5,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Bhojan Catering</title>
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-    <div class="flexbox">
-        <div class="food-card">
-            <img src="https://source.unsplash.com/1600x800/?burger" class="card-img" alt="">
-            <div class="flex">
-                <h3>Veg Supreme Burger</h3>
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                  </svg>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <h1>Bhojan</h1>
+            </div>
+
+            <a href="#" class="buttonlink">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div class="nav-link">
+                <ul>
+                    <li><a class="hm" href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <script>
+            const togglebutton = document.getElementsByClassName('buttonlink')[0]
+            const navlink = document.getElementsByClassName('nav-link')[0]
+
+            togglebutton.addEventListener('click', () => {
+                navlink.classList.toggle('active')
+            }
+            )
+        </script>
+    </header>
+    <main>
+        <div class="startinginfo">
+            <h1>Bring people together with <br> great food</h1><br>
+            <a href="contact.html">Let's talk</a>
+        </div>
+        <div class="foodimg">
+            <img src="food1.jpg" alt="" width="100%">
+        </div>
+        <div class="ourstory">
+            <div class="box1"> <img src="chicken.jpg" alt="" width="100%"></div>
+            <div class="box2">
+                <h2>Delicious food make great memories</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate assumenda quibusdam nemo atque,
+                    iste illum quos ipsam ipsa nisi! Ducimus eius tempora adipisci harum minus dolore aliquam nulla
+                    maxime?</p>
+                <a href="about.html">Our story</a>
+            </div>
+        </div>
+        <h2 class="offereventh2">Our offers for your <br> occasion or event</h2>
+        <div class="offerevent">
+            <div class="box-1 box">
+                <h3>Mini pizzas</h3>
+                <p>Delectable and bite-sized, mini pizzas are a <br>favorite of all age groups.</p>
+            </div>
+            <div class="box-2 box">
+                <h3>Smoked Trout Empanadas</h3>
+                <p>Every empanada is filled, made, and cooked by <br>hand.</p>
+            </div>
+            <div class="box-3 box">
+                <h3>Homemade French Fries</h3>
+                <p>Surprise your guests with the best gourmet <br>french fries they’ve ever tasted.</p>
+            </div>
+            <div class="box-4 box">
+                <h3>Mini Lamb Burger</h3>
+                <p>Although the flavors are slightly unusual, guests <br>always go for seconds.</p>
+            </div>
+            <div class="box-5 box">
+                <h3>Stuffed Mushrooms</h3>
+                <p>A kitchen classic, this is the perfect choice if <br>you’ve vegans in your party.</p>
+            </div>
+            <div class="box-6 box">
+                <h3>Duck Confit Quesadillas</h3>
+                <p>Sophistication and flavor come together in this <br>perfectly cheesy quesadilla. </p>
             </div>
             
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus dignissimos dolorum eveniet?</p>
         </div>
-        <div class="food-card">
-            <img src="https://source.unsplash.com/1600x800/?salad" class="card-img" alt="">
-            <div class="flex">
-                <h3>Green Salad</h3>
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                  </svg>
+        <img src="vegitables.jpg" alt="" class="offereventimg" >
+        .
+        <div class="gitouch">
+            <h3>First, we eat. Then we do everything else. Let us take care of food at your special event.</h3>
+            <a href="contact.html">Get in touch</a>
+        </div>
+    </main>
+    <footer>
+        <div class="fcontainer">
+            <div class="fbox1"> 
+                <h3>Bhojan Catering</h3>
+                <p>We’re a catering business serving the Greater Chicago area, and making sure your event is remembered for all the delicious food.</p>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus dignissimos dolorum eveniet?</p>
-        </div>
-        <div class="food-card">
-            <img src="https://source.unsplash.com/1600x800/?pizza" class="card-img" alt="">
-            <div class="flex">
-                <h3>Veg Supreme Pizza</h3>
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                  </svg>
+            <div class="fbox2">
+                <h3>Contacts</h3>
+                <a href="mailto:Hello@bhojan.com">Hello@bhojan.com</a><br>
+                <a href="tel:+919235145876">9235145876</a>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus dignissimos dolorum eveniet?</p>
         </div>
-    </div>
-    
+    </footer>
 </body>
 
 </html>
